@@ -1,0 +1,15 @@
+meta {
+  name: Get user appointments
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{root_url}}/api/appointments/
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc2Nzk4M2FhLTM1ODMtNGYxMy05ZDRjLTEyYmM2ZjBlMjZjYSIsImVtYWlsIjoiam9uYXRoYW5AZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTI1NTA4MDcsImV4cCI6MTc1MzE1NTYwN30.jiPeggDiZDzeOLHVJf4zZb9_mY0Lcyerc45fRP_gNko
+}

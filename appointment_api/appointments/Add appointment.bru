@@ -1,0 +1,27 @@
+meta {
+  name: Add appointment
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{root_url}}/api/appointments
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ5YjYxYmQ4LTNhZjUtNDA2Ni05Y2M4LWVhZjlmZGY3MzAyZiIsImVtYWlsIjoiZGFuaWVsLnZpY3RvcnlAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTI1NzQzNzMsImV4cCI6MTc1MzE3OTE3M30.J_qEDalD8ZaePFU1XoKSWbe0LZISuZGp5Yntf40fEVY
+}
+
+body:json {
+  {
+      "title": "Medical Follow-up 2",
+      "description": "Post-treatment consultation",
+      "date": "2025-07-29",
+      "time": "12:00",
+      "duration": 30,
+      "clientName": "Chika Nwosu",
+      "clientEmail": "chika.nwosu@example.com"
+    }
+}

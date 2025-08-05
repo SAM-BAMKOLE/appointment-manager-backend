@@ -1,0 +1,18 @@
+meta {
+  name: Signin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{root_url}}/api/auth/signin
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "email": "daniel.victory@gmail.com",
+    "password": "123456"
+  }
+}
